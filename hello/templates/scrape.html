@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>{{ key }} Private Jet is in </h1>
+    <div id='data'>
+        {% for data in flight_data %}
+            <p> {{ data.text }} </p>
+        {% endfor %}
+    </div>
+</body>
+</html>
